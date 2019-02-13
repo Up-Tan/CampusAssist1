@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tan_gdutli"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/title" />
+
+
+    <Button
+        android:id="@+id/campusLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/xuexiaoshenghuo2" />
+
+    <Button
+        android:id="@+id/trafficAssist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/chuxingzhinan2"
+        android:layout_marginLeft="30dp"
+        android:baselineAligned="false" />
+
+
+    <Button
+        android:id="@+id/scenery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/youwanzhinan2" />
+
+    <Button
+        android:id="@+id/phoneAssist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/haomabaishitong2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:text="@string/xiaoxun"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        tools:ignore="ObsoleteLayoutParam" />
+
+</LinearLayout>

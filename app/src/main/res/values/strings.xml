@@ -1,0 +1,62 @@
+<resources>
+
+    <string name="app_name">CampusAssist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">广工校讯通</string>
+    <string name="xiaoxun">校训：团结、勤奋、求是、创新</string>
+    
+    <!-- 号码百事通模块相关字符串常量 -->
+    <string name="numAssist">号码百事通</string>
+    <string name="addPhone">添加新号码</string>
+    <string name="exit">退出</string> 
+    <string name="name">姓名</string> 
+    <string name="phone">联系电话</string>
+    <string name="type">分类</string>
+    <string name="keyword">关键字</string>
+    <string name="submit">提交</string> 
+    <string name="reset">重置</string>
+    <string name="hint">请输入姓名或号码</string>
+    <string name="query">搜索</string>
+    <string name="result">查询结果</string>
+    <string name="trafficAssist">出行指南</string>
+    
+    
+    <!-- 出行信息模块相关字符串常量 -->
+    <string name="city">广州</string>
+    <string name="wozaina">我的位置</string>
+    <string name="xianluchaxun">线路查询</string>
+    <string name="guanjiandian">位置查询</string>
+    <string name="keyhint">关键点如KTV</string>
+    <string name="bus">输入公交线路</string>
+    
+    
+    <!-- 游玩南昌模块 -->
+    <string name="scenery">游玩广州</string>
+    <string name="scenery_item">景点介绍</string>
+    
+    
+    
+    <!-- 学校生活 -->
+    <string name="campuslife">学校生活</string>
+    <string name="campusScenery">校园风景</string>
+    <string name="freshAssist">新生指南</string>
+    <string name="campusBuild">校区平面图</string>
+    
+    <!-- 新生指南 -->    
+      
+    <string name="zhengli">整理新装</string>
+    <string name="dida">抵达目的地</string>
+    <string name="ruxiao">入校第一站</string>
+    <string name="woshi">我是一个兵</string>
+    <string name="shenghuo">生活万花筒</string>
+    <string name="jiejiao">结交新朋友</string>
+    <string name="qinlian">勤练有补助</string>
+    <string name="xuezhang">学长学姐寄语</string>
+    
+    
+    
+    
+    <string name="goBack">返回</string>      
+
+</resources>

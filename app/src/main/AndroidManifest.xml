@@ -1,0 +1,150 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iet.jxufe.cn.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="19" />
+
+    <application
+        android:icon="@drawable/study2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4CKjpz6U5GQnH4H1EdAiDhCXH5PN6mhg"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 号码百事通模块 -->
+        <activity
+            android:name="iet.juxfe.cn.phone.PhoneListActivity"
+            android:label="@string/numAssist" >           
+        </activity>
+        <activity
+            android:name="iet.juxfe.cn.phone.AddPhoneActivity"
+            android:label="@string/addPhone" >           
+        </activity>
+         <activity
+            android:name="iet.juxfe.cn.phone.ResultActivity"
+            android:label="@string/result" >           
+        </activity>
+        
+         
+         <!-- 出行信息模块 -->
+         <activity
+            android:name="iet.jxufe.cn.chuxingxinxi.ChuxingxinxiActivity"
+            android:label="@string/trafficAssist" >           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.chuxingxinxi.GongjiaoluxianActivity"
+            android:label="@string/xianluchaxun" >           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.chuxingxinxi.GuanjiandianActivity"
+            android:label="@string/guanjiandian" >           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.chuxingxinxi.WozainaActivity"
+            android:label="@string/wozaina" >           
+        </activity>
+        
+        <!-- 游玩南昌模块 -->
+         <activity
+            android:name="iet.jxufe.cn.youwannanchang.SceneryActivity"
+            android:label="@string/scenery">           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.youwannanchang.SceneryShowActivity"
+            android:label="@string/scenery_item" >           
+        </activity>
+        
+        <!-- 校园生活模块 -->
+         <activity
+            android:name="iet.jxufe.cn.campuslife.CampusLifeActivity"
+            android:label="@string/campuslife">           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.campuslife.CampusSceneryActivity"
+            android:label="@string/campusScenery">           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.campuslife.FreshAssistActivity"
+            android:label="@string/freshAssist">           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.campuslife.DetailInfoActivity"
+            android:label="@string/freshAssist">           
+        </activity>
+        <activity
+            android:name="iet.jxufe.cn.campuslife.CampusBuildActivity"
+            android:label="@string/campusBuild" >           
+        </activity>
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+    </application>
+
+
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 获取CUID，用于鉴权，请求签名等 -->
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--<uses-permission android:name="android.permission.INTERNET" />
+    &lt;!&ndash; 添加相关的权限 &ndash;&gt;
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>-->
+
+    <!-- 百度地图的屏幕支持 -->
+    <!--<supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />-->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- OpenGLES 2.0 -->
+    <!--<uses-feature android:glEsVersion="0x00020000" android:required="true" />-->
+</manifest>
